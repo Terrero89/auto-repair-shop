@@ -548,25 +548,46 @@ padding:3rem 0 ;
 background-color: rgb(245, 245, 245);
 min-height: 40vh;
 
-
-
-
 }
-.col1, .col2{
-  justify-content: space-around;
-  text-align: center;
-}
-.about-text  {
- width: 20rem;
 
-}
-.about-image img{
+.about-content{
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-between;
   
 }
 
+.about-text  {
+  padding: 0 1rem;
+flex: 1 1 8rem;
+
+}
+
+.about-text h3  {
+  font-size: 3rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+}
+.about-img  {
+  flex: 1 1 10rem;
+ 
+ }
+
+ .about-img {
+  padding: 0 auto 0 0;
+ }
+ .about-img img {
+  width: 30rem;
+  object-fit: cover;
+  
+ 
+ }
+
 
 /* //////////PRODUCT SECTION STARTS////////////*/
-#product-section {
+#services-section {
 background: white;
 justify-content: center;
 align-items: center;
@@ -574,19 +595,19 @@ text-align: center;
 padding: 4rem 0 ;
 }
 
-.product-text{
+.service-text{
 justify-content: center;
 align-items: center;
 text-align: center;
 }
 
-.product-text h3{
+.service-text h3{
   font-size: 2.5rem;
   padding-bottom: 0.8rem;
   font-weight: 500;
   }
 
-.product-text p{
+.service-text p{
     font-size: 1rem;
     padding-bottom: 0.8rem;
     color: rgb(0, 0, 0,0.7);
@@ -595,14 +616,14 @@ text-align: center;
     }
 
     @media screen and (max-width: 360px) {
-      .product-text p  {
+      .service-text p  {
        width:90%;
        padding: 0.5rem  0.1rem;
         
       }
     
     }
-.product-content {
+.service-content {
 
   display: flex;
   flex-wrap: wrap;
@@ -611,7 +632,7 @@ text-align: center;
   
 }
 
-.product-box {
+.service-box {
 
 width: 18rem;
 min-height: 10rem;
@@ -621,7 +642,7 @@ text-align: left;
 @media screen and (max-width: 768px )
 {
 
- .product-box {
+ .service-box {
   width: 35rem;
   min-height: 35rem;
 
@@ -631,7 +652,7 @@ text-align: left;
 @media screen and (max-width: 768px )
 {
 
- .product-box {
+ .service-box {
   width: 80%;
   
   object-fit: cover;
@@ -639,6 +660,12 @@ text-align: left;
   }
 }
 
+.service-box img{
+  width: 5rem;
+  border-radius:5rem ;
+  border: solid rgb(5, 5, 5, 0.5) 1px;
+  /* background-color:rgb(228, 228, 228, 0.5) ; */
+}
 
 
 
