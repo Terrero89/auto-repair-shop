@@ -8,7 +8,7 @@ function reveal(){
 
         let windowHeight = window.innerHeight;
         let revealTop = reveals[i].getBoundingClientRect().top
-        let revealPoint = 150
+        let revealPoint =150
 
         if(revealTop < windowHeight - revealPoint){
             reveals[i].classList.add('active')
@@ -17,6 +17,7 @@ function reveal(){
         }
     }
 }
+
 
 //loader effect 
 
